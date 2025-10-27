@@ -1,0 +1,3317 @@
+fileFormatVersion: 2
+guid: 75f83f5588d57b24a8791464d78940e4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TIle Assets_0
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 3334
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb388eb4e306bd4194b1ac13926e514
+      internalID: 2083180000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_1
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 3334
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bb55c80a63b504d84dfa4d8f812107
+      internalID: 1079367139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_2
+      rect:
+        serializedVersion: 2
+        x: 4588
+        y: 3334
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe0380735f7b714aa0c12b0e6c1e3e8
+      internalID: -991730772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_3
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2877
+        width: 460
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ed4284c19d0254fa1d079ec06d4c1e
+      internalID: 1725729003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_4
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 2877
+        width: 694
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e64ce202d41c9447bf701fc964d3912
+      internalID: -1846013624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_5
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 3111
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f737815c07c56d440bae5ed07a250152
+      internalID: 127784076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_6
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 2877
+        width: 460
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf73a71e5d4e86479d2801e3fae6a13
+      internalID: -637141515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_7
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 3111
+        width: 223
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c19157692516274c96eda698d421cd3
+      internalID: 573483671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_8
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 3111
+        width: 222
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d84e5da17de6e84e921478e7134c2b3
+      internalID: 1670225998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_9
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 3111
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a348a8066598ea42abe143a664877f0
+      internalID: 30774265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_10
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 3111
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78858cbcced835048ac8c72387ac445c
+      internalID: -1116599553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_11
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 2877
+        width: 463
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8ae25c9cc82364e937934ca427fca0
+      internalID: 1266610730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_12
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 2877
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f0c8fa6ab36e740837db72f97b3b88
+      internalID: 519711008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_13
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 2877
+        width: 695
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e79590aea48ea743953b116f2725341
+      internalID: -1930627058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_14
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 2877
+        width: 217
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c2739ddebb778439cbc2ffff3d63a6
+      internalID: -520447998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_15
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2643
+        width: 267
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e05ff8eaf9a9534cb169f51e1df87f5
+      internalID: -1847634628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_16
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 2646
+        width: 407
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e09b02021b60534582f616f79f206de
+      internalID: -1089656388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_17
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 2643
+        width: 222
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db307e4dcf6983c4b8a5384532ddfb02
+      internalID: -382421119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_18
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 2646
+        width: 214
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b30d695e3da7fb4f8d260d941a6d06c
+      internalID: -1714614057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_19
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 2643
+        width: 440
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e1df7a5b3bb8b48a51073de4c6587d
+      internalID: -71196039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_20
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 2643
+        width: 185
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a4337f91964054cbaf6dc7f28306b0
+      internalID: 137330073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_21
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 2643
+        width: 223
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790ebebad4de8bb4b9c66bd046ee61fe
+      internalID: 158328789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_22
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 2646
+        width: 219
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8cf3869abf83c4cbe03a80a2b8cf30
+      internalID: -653949353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_23
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 2643
+        width: 223
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba9972f652bc924bb4be8407ea79c16
+      internalID: 149280048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_24
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 2643
+        width: 287
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afcaa49bf410a443b28e5821ab5427f
+      internalID: -1710187456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_25
+      rect:
+        serializedVersion: 2
+        x: 4330
+        y: 2643
+        width: 314
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97571e9159b0bae4fb72aedb7290fef3
+      internalID: -1799704028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_26
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2411
+        width: 460
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d9d0adddc8f5b40a48c6a52173e74b
+      internalID: -1081313351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_27
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 2411
+        width: 229
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d81e6be4f582be4089d3044bff25474
+      internalID: -584764981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_28
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 2411
+        width: 223
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d034913abf93a74eae22d57d0d3422e
+      internalID: -1048329228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_29
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 2411
+        width: 428
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bd175647146174ca04be49d16b0667
+      internalID: -1853769657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_30
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 2411
+        width: 222
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec417a204ceb6524d87142819e7b4c94
+      internalID: -900156238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_31
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2411
+        width: 205
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5c5915c38f88e45aca916207ee2d41
+      internalID: 1279735613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_32
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 2455
+        width: 217
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7029b0781114d0b4782aac69e40fe8d3
+      internalID: -234444337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_33
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 2411
+        width: 222
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2360c12f041d3294f9bd7ca59d311d6c
+      internalID: 931259744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_34
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 2411
+        width: 223
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34b291917a32f2428d3e070359828ac
+      internalID: 1259046289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_35
+      rect:
+        serializedVersion: 2
+        x: 3943
+        y: 2411
+        width: 229
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230dc928e25c9b142b68ed887cf8d02c
+      internalID: -1764172951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_36
+      rect:
+        serializedVersion: 2
+        x: 4178
+        y: 2411
+        width: 228
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6102cb0eb02569d4fb67de8bf8b9e3c1
+      internalID: 984485593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_37
+      rect:
+        serializedVersion: 2
+        x: 4421
+        y: 2411
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730964c2d4b64aa4ea833a13888b577b
+      internalID: -1976578328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_38
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2177
+        width: 226
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba087810ca6a1d045b6e197f10f10393
+      internalID: -388131477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_39
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 2177
+        width: 222
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1cf0fba418d4149b9d24c028cb8a36
+      internalID: 256293361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_40
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 2177
+        width: 226
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138f98a6924b7ca4fbb501e212a4a284
+      internalID: -1332327266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_41
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 2177
+        width: 228
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba0e5d0f1d1e847b85a10582e79cb8
+      internalID: -2016448640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_42
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 2177
+        width: 216
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79355a25fe65d247b89a6f089c19606
+      internalID: -159285015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_43
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2177
+        width: 223
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05844e4b7caadd408afee1f97fcfd19
+      internalID: -250282836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_44
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 2177
+        width: 217
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502bff092a84ca447a81eff8b01b719d
+      internalID: -1065529685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_45
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 2253
+        width: 217
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83be9d100bb7fcf42a30e72e1b581c51
+      internalID: 1849711443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_46
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 2177
+        width: 132
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c8454937c94324ebb0e0b4db5e3240
+      internalID: -48331479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_47
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 2177
+        width: 443
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd8e0663828a4f48b3b96491266f872
+      internalID: 1284842385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_48
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 2177
+        width: 399
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343c0f49bc3ec914b9567d7365afe6c8
+      internalID: 96710829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_49
+      rect:
+        serializedVersion: 2
+        x: 4406
+        y: 2177
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6ee3e717ad42c47aad2ba858e8c854
+      internalID: -697871383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_50
+      rect:
+        serializedVersion: 2
+        x: 4503
+        y: 2177
+        width: 141
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab86541decd21614f88258bec9607228
+      internalID: -1587632581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_51
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1939
+        width: 460
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c5e1999b52cd34eaa8e22c0f24bd1f
+      internalID: -2059063321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_52
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1939
+        width: 457
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2a1276c9af94d419678406f224e391
+      internalID: -1676089640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_53
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 1939
+        width: 460
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d45c6004eef0b4aa55ffeb063f9e4b
+      internalID: -2171553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_54
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 1939
+        width: 225
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd80916e8f11f9446945df1562b83e83
+      internalID: 652172783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_55
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 1939
+        width: 220
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126e652735ad257458b40c1c4bdb0bc3
+      internalID: -902043469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_56
+      rect:
+        serializedVersion: 2
+        x: 3237
+        y: 1939
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19a7a5cd0f3c08408e5c76a4c7517fe
+      internalID: -305558195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_57
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1939
+        width: 222
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13f5c5ba9bdb5047ad5e32a8ba2e15e
+      internalID: -634104814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_58
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 1939
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb02d3d4ca90c4e8552739f2c8e3e9
+      internalID: 395522708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_59
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 1939
+        width: 220
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ad9652efe70f747940a65b0c09ea73
+      internalID: 580713452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_60
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 1939
+        width: 463
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52f2a6912e4f654b9113b7555db3127
+      internalID: -29159735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_61
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1462
+        width: 320
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a82453854f8b7a4a8766ad83c3ce679
+      internalID: 2058453828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_62
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 1462
+        width: 325
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c7ceab1e46e3a44b754b01dacda3b5
+      internalID: -1848271638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_63
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1465
+        width: 334
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b9e81587ff3a94e920293e0d06d7b5
+      internalID: 441886151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_64
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1462
+        width: 322
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6481289326f9442ac19f8e3de646d7
+      internalID: 1289892599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_65
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 1688
+        width: 346
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a71a029a87475347818b283d29fd546
+      internalID: -2000669125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_66
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 1688
+        width: 243
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c275c913056bbb34da11bbf1e1f17427
+      internalID: 2031649283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_67
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1688
+        width: 231
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065caadd6a8a9cf4d8e74d5a3291c951
+      internalID: -1839506812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_68
+      rect:
+        serializedVersion: 2
+        x: 3709
+        y: 1688
+        width: 226
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cf02599472ef546a001412bb509338
+      internalID: -684134040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_69
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 1711
+        width: 220
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d09eb83f8c2251479f011c729136692
+      internalID: 1425432614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_70
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 1693
+        width: 231
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3496c4e03b6b680419da6e66a7583383
+      internalID: -586524117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_71
+      rect:
+        serializedVersion: 2
+        x: 4438
+        y: 1720
+        width: 203
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0999ab4213b3b545b9772bc46afbcd0
+      internalID: 61232934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_72
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 1462
+        width: 132
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f782f14e9d8ed648a664572113b0abd
+      internalID: 867254975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_73
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1462
+        width: 301
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5132fc4cb49019840ab3380a40f5ecee
+      internalID: -1762257906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_74
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 1462
+        width: 135
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee511f4aac47544db35cf943066f699
+      internalID: 1313836656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_75
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 1462
+        width: 252
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3de8e904125f6468e6d6ab604fa7fd
+      internalID: -99713612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_76
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1462
+        width: 216
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e221ddc7e2868541a7da42c660188d1
+      internalID: -2093467831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_77
+      rect:
+        serializedVersion: 2
+        x: 3618
+        y: 1462
+        width: 220
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4a75e7be5533d429e17d5e5ad12879
+      internalID: 310877347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_78
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 1462
+        width: 219
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce320a4901897b428464bf681be5fc3
+      internalID: 1036201902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_79
+      rect:
+        serializedVersion: 2
+        x: 4078
+        y: 1462
+        width: 284
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cd3b6331ee1c34b9d26bf75c0c019d
+      internalID: 425451218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_80
+      rect:
+        serializedVersion: 2
+        x: 4377
+        y: 1462
+        width: 269
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75044583bb9d74d46be2b9ebca703686
+      internalID: 40544706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_81
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1210
+        width: 627
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b47679cc3dc6a5438a418697faac985
+      internalID: 1585028104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_82
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1210
+        width: 293
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4288388235ba44599fd76cfc0b8207
+      internalID: 1780727017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_83
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 1210
+        width: 225
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d1c7f636146cf429a1ce01b217f19f
+      internalID: 1788815433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_84
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 1210
+        width: 220
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85b97c0156f2fd4e927366e6f75a9a8
+      internalID: -1774256882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_85
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 1210
+        width: 225
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ee101995ddd264ea6eb169967c9af6
+      internalID: 102538213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_86
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 1251
+        width: 220
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff0d85628964c940adfc5916d372c6b
+      internalID: -564453050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_87
+      rect:
+        serializedVersion: 2
+        x: 3237
+        y: 1210
+        width: 226
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f2562c7f03b204f9a2285ca196a0b0
+      internalID: -1333083196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_88
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 1210
+        width: 222
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa1565762f93c747bbf1041a839c528
+      internalID: 1318373436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_89
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 1257
+        width: 223
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fe250117b7eb4ab027b12341b081a
+      internalID: -1571964069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_90
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 1213
+        width: 220
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46014044d25786499972b3c1d9280a9
+      internalID: 1515499999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_91
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 1210
+        width: 225
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92aa213c12447e41bbd4db292e4070d
+      internalID: 738032676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_92
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 1210
+        width: 226
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d027e55af8e97459e3206ba111c708
+      internalID: -1245958182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_93
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 996
+        width: 217
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba230ceb3a56e0f49b8404c363975e36
+      internalID: -1951241257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_94
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 976
+        width: 219
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba79bb42961fdf46b24d34d2c1f27d7
+      internalID: -1274305472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_95
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 996
+        width: 226
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a2b6314bd4e9a4da62ada91e6e3527
+      internalID: -1106298270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_96
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 973
+        width: 223
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95b6b7ee40f73f4f89986b8e2576766
+      internalID: 152039044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_97
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 981
+        width: 225
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8c149222197ab41b931ab8260b4189
+      internalID: -2028671234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_98
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 973
+        width: 220
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3439d7a4b8a58ee4785d96d613b43edc
+      internalID: 1667133454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_99
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 996
+        width: 220
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654eeb6af2bff724b9d1557d8118c9e6
+      internalID: -1541921674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_100
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 973
+        width: 220
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f050e659764785b4dbc8bb2820430ee5
+      internalID: -170548777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_101
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 973
+        width: 220
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e261223f1a82e484a840e14303acec26
+      internalID: -2081157571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_102
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 973
+        width: 222
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b9c6411b6a4554ab8a5762d0cbd116
+      internalID: 339773128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_103
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 973
+        width: 223
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a08411eb014b24cb24d088c4f074dc
+      internalID: 241216868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_104
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 973
+        width: 223
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dec409ff10029341a3ece68477f9218
+      internalID: -1757770844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_105
+      rect:
+        serializedVersion: 2
+        x: 4184
+        y: 970
+        width: 222
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bda818d4b2daca46afc098607f72eed
+      internalID: -791309968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_106
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 973
+        width: 226
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fde6063c504b748a19261988049201
+      internalID: 1068561165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_107
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 735
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acab18eb948e7d848961450db5c8294c
+      internalID: -570913680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_108
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 735
+        width: 222
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512ebd72d4e6190459d6f637f48e9fba
+      internalID: -1896346966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_109
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 744
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d2839a786760a4689e94649202cee5
+      internalID: 1140037949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_110
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 735
+        width: 542
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7d5254d7407c54e87317c83d8e3fdb
+      internalID: -1057648872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_111
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 735
+        width: 604
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44749a42a03c7844b809a85182d4b2d
+      internalID: 1413736644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_112
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 744
+        width: 229
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6ee649569c36d4db6f5886fcf595cd
+      internalID: -1617612579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_113
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 735
+        width: 222
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312581249857d1b438c2e497caffebc1
+      internalID: -835997683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_114
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 735
+        width: 223
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dec9dc1506035342b95728325b2e985
+      internalID: 858368591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_115
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 735
+        width: 220
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c8d0e758033974d89baec546ff7385
+      internalID: 633638908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_116
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 771
+        width: 222
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af31a555597f3a34abba8961556251dd
+      internalID: -777877736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_117
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 735
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7e5bbcda7db2e4d99998e15628ecc5
+      internalID: 982126074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_118
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 498
+        width: 460
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403e7714f0eba4d4f9a29af26c78ec81
+      internalID: 1307694246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_119
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 498
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043c440e019e9b44cb36721803d01c0a
+      internalID: -1690163316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_120
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 498
+        width: 205
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bea27e567934304688bcad9862faad4
+      internalID: 704143701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_121
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 498
+        width: 460
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005262227dfd1d34b931d80485bf90e5
+      internalID: 1433218920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_122
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 498
+        width: 220
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcdcfaa45f192141802908c5aa965ae
+      internalID: 550754272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_123
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 498
+        width: 220
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47eb0c1512f71194783eae5dc3d7e022
+      internalID: -1986484110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_124
+      rect:
+        serializedVersion: 2
+        x: 3237
+        y: 498
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e560bc3b80f34d46ba96efe3a9746aa
+      internalID: 1648083750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_125
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 498
+        width: 460
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56af757c49d9bf46a605faa9d59115b
+      internalID: 165367181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_126
+      rect:
+        serializedVersion: 2
+        x: 3946
+        y: 498
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ff56d3352deaa45865ad159b2f3171
+      internalID: -2056791650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_127
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 498
+        width: 463
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3535f7620cb7d4880c649be92cf93f
+      internalID: 1004490454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_128
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 35
+        width: 460
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c766ee5f21d551a46a3f324dce4db4a7
+      internalID: 1090512652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_129
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 35
+        width: 226
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0d86048384422469fea8334a82f44d
+      internalID: -123730437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_130
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 264
+        width: 220
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04177876073ff34f9c723692f615b9c
+      internalID: 383301008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_131
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 35
+        width: 225
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3259c021317b541930bc355b82407a
+      internalID: 2125487386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_132
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 267
+        width: 220
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a23d428f31b150499cbe0d3928cf928
+      internalID: 1121828346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_133
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 267
+        width: 225
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e3ac3a0fa8b54e8e84720e1162da3
+      internalID: 1898505370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_134
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 267
+        width: 223
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee29b9045baeab458c4ecc90954f9eb
+      internalID: -881920780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_135
+      rect:
+        serializedVersion: 2
+        x: 3237
+        y: 267
+        width: 226
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb20d27ea5b5cf4cabfc5b8744439ed
+      internalID: -710304077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_136
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 35
+        width: 460
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff457500ac9663b4bb67a55ef11f8ea1
+      internalID: 701280985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_137
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 264
+        width: 217
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07cdc781aa737f49a207a67ffdb3eb5
+      internalID: 891431986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_138
+      rect:
+        serializedVersion: 2
+        x: 4181
+        y: 35
+        width: 463
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa431de0227f3714a824eb701843401e
+      internalID: -467700582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_139
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 35
+        width: 220
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b779cc7090b8054b9b392415c3e9288
+      internalID: -2088961546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_140
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 35
+        width: 220
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c30d2230b777384e84de679a98da18c
+      internalID: 1689547110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_141
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 35
+        width: 225
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447fe11226abd154ebbf82868aed0edb
+      internalID: -334651000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_142
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 35
+        width: 223
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02716768da2e0d54285fe5cf17011c24
+      internalID: -370664354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_143
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 35
+        width: 220
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9daddc702f21be48b67d6fe69b90f37
+      internalID: 1934975961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIle Assets_144
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 35
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f180134bd4b4646a14d30f042954da
+      internalID: 8946169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TIle Assets_0: 2083180000
+      TIle Assets_1: 1079367139
+      TIle Assets_10: -1116599553
+      TIle Assets_100: -170548777
+      TIle Assets_101: -2081157571
+      TIle Assets_102: 339773128
+      TIle Assets_103: 241216868
+      TIle Assets_104: -1757770844
+      TIle Assets_105: -791309968
+      TIle Assets_106: 1068561165
+      TIle Assets_107: -570913680
+      TIle Assets_108: -1896346966
+      TIle Assets_109: 1140037949
+      TIle Assets_11: 1266610730
+      TIle Assets_110: -1057648872
+      TIle Assets_111: 1413736644
+      TIle Assets_112: -1617612579
+      TIle Assets_113: -835997683
+      TIle Assets_114: 858368591
+      TIle Assets_115: 633638908
+      TIle Assets_116: -777877736
+      TIle Assets_117: 982126074
+      TIle Assets_118: 1307694246
+      TIle Assets_119: -1690163316
+      TIle Assets_12: 519711008
+      TIle Assets_120: 704143701
+      TIle Assets_121: 1433218920
+      TIle Assets_122: 550754272
+      TIle Assets_123: -1986484110
+      TIle Assets_124: 1648083750
+      TIle Assets_125: 165367181
+      TIle Assets_126: -2056791650
+      TIle Assets_127: 1004490454
+      TIle Assets_128: 1090512652
+      TIle Assets_129: -123730437
+      TIle Assets_13: -1930627058
+      TIle Assets_130: 383301008
+      TIle Assets_131: 2125487386
+      TIle Assets_132: 1121828346
+      TIle Assets_133: 1898505370
+      TIle Assets_134: -881920780
+      TIle Assets_135: -710304077
+      TIle Assets_136: 701280985
+      TIle Assets_137: 891431986
+      TIle Assets_138: -467700582
+      TIle Assets_139: -2088961546
+      TIle Assets_14: -520447998
+      TIle Assets_140: 1689547110
+      TIle Assets_141: -334651000
+      TIle Assets_142: -370664354
+      TIle Assets_143: 1934975961
+      TIle Assets_144: 8946169
+      TIle Assets_15: -1847634628
+      TIle Assets_16: -1089656388
+      TIle Assets_17: -382421119
+      TIle Assets_18: -1714614057
+      TIle Assets_19: -71196039
+      TIle Assets_2: -991730772
+      TIle Assets_20: 137330073
+      TIle Assets_21: 158328789
+      TIle Assets_22: -653949353
+      TIle Assets_23: 149280048
+      TIle Assets_24: -1710187456
+      TIle Assets_25: -1799704028
+      TIle Assets_26: -1081313351
+      TIle Assets_27: -584764981
+      TIle Assets_28: -1048329228
+      TIle Assets_29: -1853769657
+      TIle Assets_3: 1725729003
+      TIle Assets_30: -900156238
+      TIle Assets_31: 1279735613
+      TIle Assets_32: -234444337
+      TIle Assets_33: 931259744
+      TIle Assets_34: 1259046289
+      TIle Assets_35: -1764172951
+      TIle Assets_36: 984485593
+      TIle Assets_37: -1976578328
+      TIle Assets_38: -388131477
+      TIle Assets_39: 256293361
+      TIle Assets_4: -1846013624
+      TIle Assets_40: -1332327266
+      TIle Assets_41: -2016448640
+      TIle Assets_42: -159285015
+      TIle Assets_43: -250282836
+      TIle Assets_44: -1065529685
+      TIle Assets_45: 1849711443
+      TIle Assets_46: -48331479
+      TIle Assets_47: 1284842385
+      TIle Assets_48: 96710829
+      TIle Assets_49: -697871383
+      TIle Assets_5: 127784076
+      TIle Assets_50: -1587632581
+      TIle Assets_51: -2059063321
+      TIle Assets_52: -1676089640
+      TIle Assets_53: -2171553
+      TIle Assets_54: 652172783
+      TIle Assets_55: -902043469
+      TIle Assets_56: -305558195
+      TIle Assets_57: -634104814
+      TIle Assets_58: 395522708
+      TIle Assets_59: 580713452
+      TIle Assets_6: -637141515
+      TIle Assets_60: -29159735
+      TIle Assets_61: 2058453828
+      TIle Assets_62: -1848271638
+      TIle Assets_63: 441886151
+      TIle Assets_64: 1289892599
+      TIle Assets_65: -2000669125
+      TIle Assets_66: 2031649283
+      TIle Assets_67: -1839506812
+      TIle Assets_68: -684134040
+      TIle Assets_69: 1425432614
+      TIle Assets_7: 573483671
+      TIle Assets_70: -586524117
+      TIle Assets_71: 61232934
+      TIle Assets_72: 867254975
+      TIle Assets_73: -1762257906
+      TIle Assets_74: 1313836656
+      TIle Assets_75: -99713612
+      TIle Assets_76: -2093467831
+      TIle Assets_77: 310877347
+      TIle Assets_78: 1036201902
+      TIle Assets_79: 425451218
+      TIle Assets_8: 1670225998
+      TIle Assets_80: 40544706
+      TIle Assets_81: 1585028104
+      TIle Assets_82: 1780727017
+      TIle Assets_83: 1788815433
+      TIle Assets_84: -1774256882
+      TIle Assets_85: 102538213
+      TIle Assets_86: -564453050
+      TIle Assets_87: -1333083196
+      TIle Assets_88: 1318373436
+      TIle Assets_89: -1571964069
+      TIle Assets_9: 30774265
+      TIle Assets_90: 1515499999
+      TIle Assets_91: 738032676
+      TIle Assets_92: -1245958182
+      TIle Assets_93: -1951241257
+      TIle Assets_94: -1274305472
+      TIle Assets_95: -1106298270
+      TIle Assets_96: 152039044
+      TIle Assets_97: -2028671234
+      TIle Assets_98: 1667133454
+      TIle Assets_99: -1541921674
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
