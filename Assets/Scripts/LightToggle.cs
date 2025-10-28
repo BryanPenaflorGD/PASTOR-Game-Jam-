@@ -20,6 +20,9 @@ public class LightToggle : MonoBehaviour
     private float currentFuel;
     private bool isDraining = false;
 
+    [Header("References")]
+    public PlayerInventory playerInventory;
+
     private bool isToggling = false;
 
     private void Start()
@@ -36,11 +39,14 @@ public class LightToggle : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(currentFuel);
         if (Input.GetKeyDown(toggleKey) && !isToggling)
         {
             StartCoroutine(ToggleLightsAndCastWave());
-        }
 
+           
+        }
+      
         if (lightsOn && isDraining)
         {
             DrainFuel();
@@ -51,53 +57,61 @@ public class LightToggle : MonoBehaviour
     {
         isToggling = true;
 
-        // Determine next light state, but prevent enabling if out of fuel
-        bool nextLightsOn = !lightsOn;
-        if (nextLightsOn && currentFuel <= 0f)
+        // Try toggling ON
+        if (!lightsOn)
         {
-            // Cannot turn on lights with no fuel
-            isToggling = false;
-            yield break;
-        }
-
-        // Apply toggle
-        lightsOn = nextLightsOn;
-        foreach (var light in lights)
-        {
-            if (light != null)
-                light.enabled = lightsOn;
-        }
-
-        //manage fuel drain state
-        if (lightsOn)
-        {
-            isDraining = true;
-        }
-        else
-        {
-            isDraining = false;
-        }
-
-        //cast wave effect
-        if (wavePrefab)
-        {
-            GameObject wave = Instantiate(wavePrefab, transform.position, Quaternion.identity);
-            float currentScale = 0.1f;
-
-
-            while (currentScale < waveMaxScale)
+            // Check if we have fragments or fuel left
+            if (currentFuel <= 0)
             {
-                currentScale += Time.deltaTime * waveSpeed;
-                wave.transform.localScale = Vector3.one * currentScale;
-                yield return null;
+                if (playerInventory != null && playerInventory.fragments > 0)
+                {
+                    playerInventory.SpendFragments(1);
+                    currentFuel = maxFuel;
+                    Debug.Log("Shard consumed to refuel light. Remaining: " + playerInventory.fragments);
+                }
+                else
+                {
+                    Debug.Log("Out of fragments! Can't turn light on.");
+                    isToggling = false;
+                    yield break;
+                }
             }
 
-            Destroy(wave);
+            // Turn on the light
+            lightsOn = true;
+            isDraining = true;
+            foreach (var light in lights)
+                if (light != null)
+                    light.enabled = true;
+
+            if (wavePrefab)
+                yield return StartCoroutine(SpawnWave());
+        }
+        // Toggling OFF
+        else
+        {
+            TurnOffLights();
+            if (wavePrefab)
+                yield return StartCoroutine(SpawnWave());
         }
 
         isToggling = false;
     }
 
+    private IEnumerator SpawnWave()
+    {
+        GameObject wave = Instantiate(wavePrefab, transform.position, Quaternion.identity);
+        float currentScale = 0.1f;
+
+        while (currentScale < waveMaxScale)
+        {
+            currentScale += Time.deltaTime * waveSpeed;
+            wave.transform.localScale = Vector3.one * currentScale;
+            yield return null;
+        }
+
+        Destroy(wave);
+    }
     private void DrainFuel()
     {
         currentFuel -= fuelDrainRate * Time.deltaTime;

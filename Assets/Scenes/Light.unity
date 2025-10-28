@@ -460,12 +460,13 @@ MonoBehaviour:
   lights:
   - {fileID: 1863647817}
   toggleKey: 101
-  lightsOn: 1
+  lightsOn: 0
   wavePrefab: {fileID: 1866605029272535749, guid: 4e708e1ea65984d4283064de26cb60c9, type: 3}
   waveSpeed: 25
   waveMaxScale: 10
   maxFuel: 100
   fuelDrainRate: 5
+  playerInventory: {fileID: 1159443083}
 --- !u!1 &1159443077
 GameObject:
   m_ObjectHideFlags: 0
