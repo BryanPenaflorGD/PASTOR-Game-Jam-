@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using System.Collections;
 
+
 public class BakunawaDetecting : MonoBehaviour
 {
     [Header("References")]
@@ -13,19 +14,20 @@ public class BakunawaDetecting : MonoBehaviour
     public float pauseDuration = 2f;       // How long to pause when aligned
 
     [Header("Light & Wave Settings")]
-    public Light2D[] lights;               // Lights to toggle
-    public GameObject wavePrefab;          // Wave effect prefab
-    public float waveSpeed = 5f;           // How fast the wave expands
-    public float waveMaxScale = 5f;        // Maximum wave scale
+    public Light2D[] lights;               
+    public GameObject wavePrefab;          
+    public float waveSpeed = 5f;           
+    public float waveMaxScale = 5f;        
 
     private bool isPaused = false;
     private bool hasCastedThisPause = false;
+
+    private int detectCount = 0;
 
     void Update()
     {
         if (player == null || movementScript == null) return;
 
-        // Check if horizontally aligned with player
         float xDiff = Mathf.Abs(transform.position.x - player.position.x);
 
         if (xDiff <= alignThreshold && !isPaused)
@@ -71,6 +73,15 @@ public class BakunawaDetecting : MonoBehaviour
         if (wavePrefab)
         {
             GameObject wave = Instantiate(wavePrefab, transform.position, Quaternion.identity);
+
+            WaveHitDetector detector = wave.GetComponent<WaveHitDetector>();
+            if (detector != null)
+            {
+                detector.Initialize(player);
+                detector.OnPlayerHit += OnPlayerHitByWave;
+                
+            }
+
             float currentScale = 0.1f;
 
             while (currentScale < waveMaxScale)
@@ -82,5 +93,25 @@ public class BakunawaDetecting : MonoBehaviour
 
             Destroy(wave);
         }
+    }
+    private void OnPlayerHitByWave()
+    {
+        Debug.Log("Player was hit by Bakunawa’s search wave!");
+        // TODO: Add debuffs
+
+        PlayerStatusEffects playerEffects = player.GetComponent<PlayerStatusEffects>();
+        int debuffValue = Random.Range(1, 3);
+        if (playerEffects != null)
+        {
+            if (debuffValue == 1)
+                playerEffects.ApplyDebuff("Slow", 15f);
+            if (debuffValue == 2)
+                playerEffects.ApplyDebuff("Blind", 10f);
+            if (debuffValue == 3)
+                playerEffects.ApplyDebuff("Fuel", 15f);
+        }
+
+        detectCount++;
+        Debug.Log("Times Detected: " + detectCount);
     }
 }
