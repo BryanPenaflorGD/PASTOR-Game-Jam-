@@ -391,20 +391,20 @@ Tilemap:
     m_Data:
       e00: 0
       e01: 0
-      e02: 3.7500038
-      e03: 3.7500038
+      e02: -3.7500954
+      e03: -3.7500954
       e10: 0
       e11: 0
-      e12: 9.82e-43
-      e13: 9.82e-43
-      e20: 2.317033e-21
-      e21: -2.2220759e-10
-      e22: -5.004021e-29
-      e23: -0.00011203834
+      e12: 6.8e-43
+      e13: 6.8e-43
+      e20: -1600.5605
+      e21: 1.1201362e-10
+      e22: 9.913633e-29
+      e23: -8.754971e+9
       e30: 4.5904e-41
-      e31: 9.85e-43
-      e32: 9.82e-43
-      e33: 9.82e-43
+      e31: 6.84e-43
+      e32: 6.81e-43
+      e33: 6.82e-43
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
@@ -462,7 +462,7 @@ Transform:
   m_GameObject: {fileID: 927408066}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.005, y: -0.623, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
