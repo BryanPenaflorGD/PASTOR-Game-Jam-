@@ -464,6 +464,8 @@ MonoBehaviour:
   wavePrefab: {fileID: 1866605029272535749, guid: 4e708e1ea65984d4283064de26cb60c9, type: 3}
   waveSpeed: 25
   waveMaxScale: 10
+  maxFuel: 100
+  fuelDrainRate: 5
 --- !u!1 &1159443077
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +479,7 @@ GameObject:
   - component: {fileID: 1159443080}
   - component: {fileID: 1159443079}
   - component: {fileID: 1159443078}
+  - component: {fileID: 1159443083}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -634,6 +637,19 @@ Transform:
   - {fileID: 1120743161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159443083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159443077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda2d4581de6de54bb6e2af6b1f2fa37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragments: 5
 --- !u!1 &1164625230
 GameObject:
   m_ObjectHideFlags: 0
