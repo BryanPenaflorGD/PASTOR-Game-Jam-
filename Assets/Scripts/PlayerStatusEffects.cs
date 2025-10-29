@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class PlayerStatusEffects : MonoBehaviour
@@ -31,7 +31,7 @@ public class PlayerStatusEffects : MonoBehaviour
                 break;
 
             case "Fuel":
-                if(!isLackingFuel) StartCoroutine(FuelDebuff(duration));
+                if (!isLackingFuel) StartCoroutine(FuelDebuff(duration));
                 break;
         }
     }
@@ -53,26 +53,56 @@ public class PlayerStatusEffects : MonoBehaviour
         Debug.Log("Slow debuff ended.");
     }
 
+   
     private IEnumerator BlindDebuff(float duration)
     {
         isBlinded = true;
-        Debug.Log("Player is blinded!");
-        // e.g., dim player�s light or add screen overlay
+        Debug.Log("Player’s field of vision is shrinking...");
 
-        yield return new WaitForSeconds(duration);
+        Camera cam = Camera.main;
+        if (cam != null)
+        {
+            float originalSize = cam.orthographicSize;
+            float targetSize = originalSize * 0.5f; // shrink vision to 50%
+            float halfDuration = duration / 1f;
+            float t = 0f;
+
+            // Smooth zoom IN
+            while (t < halfDuration)
+            {
+                t += Time.deltaTime;
+                cam.orthographicSize = Mathf.Lerp(originalSize, targetSize, t / halfDuration);
+                yield return null;
+            }
+
+            // Stay zoomed briefly
+            yield return new WaitForSeconds(8f);
+
+            // Smooth zoom OUT
+            t = 0f;
+            while (t < halfDuration)
+            {
+                t += Time.deltaTime;
+                cam.orthographicSize = Mathf.Lerp(targetSize, originalSize, t / halfDuration);
+                yield return null;
+            }
+
+            cam.orthographicSize = originalSize;
+        }
 
         isBlinded = false;
-        Debug.Log("Blindness ended!");
+        Debug.Log("Player’s vision returned to normal!");
     }
+
     private IEnumerator FuelDebuff(float duration)
     {
-        isBlinded = true;
+        isLackingFuel = true;
         Debug.Log("Player is losing grip on a fragment!");
         // moon fragment usage shortened
 
         yield return new WaitForSeconds(duration);
 
-        isBlinded = false;
+        isLackingFuel = false;
         Debug.Log("Lack of Fuel ended!");
     }
 }

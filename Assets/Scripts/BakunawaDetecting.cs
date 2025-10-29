@@ -105,10 +105,13 @@ public class BakunawaDetecting : MonoBehaviour
         {
             if (debuffValue == 1)
                 playerEffects.ApplyDebuff("Slow", 15f);
+
             if (debuffValue == 2)
                 playerEffects.ApplyDebuff("Blind", 10f);
+
             if (debuffValue == 3)
                 playerEffects.ApplyDebuff("Fuel", 15f);
+
         }
 
         detectCount++;
