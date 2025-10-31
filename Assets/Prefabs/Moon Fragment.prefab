@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2814616907691110461}
   - component: {fileID: 1046701982810310189}
   - component: {fileID: -2396326990489459475}
+  - component: {fileID: -828453734649533810}
   m_Layer: 0
   m_Name: Moon Fragment
   m_TagString: Untagged
@@ -99,6 +100,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+--- !u!114 &-828453734649533810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062523352241357227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db975ababab2e2f42b8b22d20c640a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.5
+  frequency: 1
 --- !u!1 &1150438367676226576
 GameObject:
   m_ObjectHideFlags: 0
