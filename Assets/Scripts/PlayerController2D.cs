@@ -68,10 +68,10 @@ public class PlayerController2D : MonoBehaviour
             anim.SetTrigger("Jump");
             grounded = false;
         }
-        if(!wasGrounded && isGrounded)
-        {
-            anim.ResetTrigger("Land");
-        }
+        //if(!wasGrounded && isGrounded)
+        //{
+        //    anim.ResetTrigger("Land");
+        //}
     }
 
     private void FixedUpdate()
