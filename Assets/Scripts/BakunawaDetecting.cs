@@ -100,7 +100,7 @@ public class BakunawaDetecting : MonoBehaviour
         // TODO: Add debuffs
 
         PlayerStatusEffects playerEffects = player.GetComponent<PlayerStatusEffects>();
-        int debuffValue = Random.Range(1, 3);
+        int debuffValue = Random.Range(1, 4);
         if (playerEffects != null)
         {
             if (debuffValue == 1)
