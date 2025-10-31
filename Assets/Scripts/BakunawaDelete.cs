@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BakunawaDelete : MonoBehaviour
 {
@@ -31,5 +32,14 @@ public class BakunawaDelete : MonoBehaviour
         // Destroy the referenced object
         Destroy(targetObject);
         Destroy(targetObject1);
+
+        StartCoroutine(ReturnMainMenu());
+    }
+
+    IEnumerator ReturnMainMenu()
+    {
+        yield return new WaitForSeconds(destroyDelay);
+
+        SceneManager.LoadScene("MainMenu");
     }
 }

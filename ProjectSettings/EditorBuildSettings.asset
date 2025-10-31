@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes_/MainMenu.unity
     guid: 9b37e4856b441884b9e0f6201bdf20bc
   - enabled: 1
-    path: Assets/Scenes_/boss anim experiment.unity
-    guid: 05c31c0d300ac8d4cab3fdbb1cb33afe
+    path: Assets/Scenes_/Merge_Level.unity
+    guid: 2eb9e4511e5b61c408a5cc7a6ba4c615
+  - enabled: 1
+    path: Assets/Scenes_/Bakunawa_Ending.unity
+    guid: 50807e33843f76d4bbf8f942d554b842
   m_configObjects: {}

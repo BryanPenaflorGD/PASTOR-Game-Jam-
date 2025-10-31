@@ -31,4 +31,9 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = music;
         musicSource.Play();
     }
+
+    public void StopMusic(AudioClip music)
+    {
+        musicSource.Stop();
+    }
 }
