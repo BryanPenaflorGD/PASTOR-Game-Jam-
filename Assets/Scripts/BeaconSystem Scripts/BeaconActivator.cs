@@ -7,11 +7,13 @@ public class BeaconActivator : MonoBehaviour
     [Header("Beacon Settings")]
     public int requiredFragments = 5;
     public float channelTime = 3f;
-    public GameObject beaconLight;
 
     [Header("Detection Settings")]
     public float detectionRadius = 2f;
     public LayerMask playerLayer;
+
+    [Header("Beacon Light")]
+    public GameObject beaconLight; // child light or effect GameObject
 
     public UnityEvent onBeaconActivated;
 
@@ -29,6 +31,14 @@ public class BeaconActivator : MonoBehaviour
 
         if (onBeaconActivated == null)
             onBeaconActivated = new UnityEvent();
+
+        // Automatically find a child named "Light" or "BeaconLight"
+        Transform child = transform.Find("Light") ?? transform.Find("BeaconLight");
+        if (child != null)
+        {
+            beaconLight = child.gameObject;
+            beaconLight.SetActive(false);
+        }
     }
 
     private void Start()
@@ -38,31 +48,30 @@ public class BeaconActivator : MonoBehaviour
 
     private void Update()
     {
-        // Check if player is within radius
         Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, detectionRadius, playerLayer);
+        bool wasInRange = playerInRange;
         playerInRange = (playerCollider != null);
 
-        if (!playerInRange || isActivated) return;
+        if (isActivated) return;
 
-        // Toggle channeling on key press
-        if (Input.GetKeyDown(KeyCode.F))
+        // Start channeling when player enters
+        if (playerInRange && !wasInRange && !isChanneling)
         {
-            if (!isChanneling)
+            if (playerInventory.HasEnoughFragments(requiredFragments))
             {
-                if (playerInventory.HasEnoughFragments(requiredFragments))
-                {
-                    channelRoutine = StartCoroutine(ChannelBeacon());
-                    anim.SetBool("isChanneling", true);
-                }
-                else
-                {
-                    Debug.Log("Not enough fragments to activate beacon!");
-                }
+                channelRoutine = StartCoroutine(ChannelBeacon());
+                anim.SetBool("isChanneling", true);
             }
             else
             {
-                StopChanneling("Channeling stopped manually.");
+                Debug.Log("Not enough fragments to activate beacon!");
             }
+        }
+
+        // Stop channeling if player leaves range
+        if (!playerInRange && isChanneling)
+        {
+            StopChanneling("Player left beacon range.");
         }
     }
 
@@ -74,14 +83,7 @@ public class BeaconActivator : MonoBehaviour
 
         while (elapsed < channelTime)
         {
-            // Interrupted manually
-            if (!isChanneling)
-            {
-                StopChanneling("Channeling interrupted.");
-                yield break;
-            }
-
-            // Player moved away
+            if (!isChanneling) yield break;
             if (!playerInRange)
             {
                 StopChanneling("Player left beacon range.");
@@ -92,10 +94,7 @@ public class BeaconActivator : MonoBehaviour
             yield return null;
         }
 
-        // ✅ Channeling complete — now spend fragments
         playerInventory.SpendFragments(requiredFragments);
-        Debug.Log($"Beacon activated! Spent {requiredFragments} fragments. Remaining: {playerInventory.fragments}");
-
         ActivateBeacon();
         isChanneling = false;
         anim.SetBool("isChanneling", false);
