@@ -13,20 +13,21 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     public float detectionRange = 8f;
     public float chaseSpeed = 3.5f;
-    public LightToggle lightToggle; // Reference to your existing LightToggle script
+    public LightToggle lightToggle;
 
     [Header("Components")]
     private Rigidbody2D rb;
     private AutoRestartWithFade gameManager;
-    private void Start()
+
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gameManager = FindObjectOfType<AutoRestartWithFade>();
     }
 
-    private void Update()
+    void Update()
     {
-        // If the light is on and the player is close, chase the player
+
         if (lightToggle != null && lightToggle.lightsOn && PlayerInRange())
         {
             ChasePlayer();
@@ -73,21 +74,21 @@ public class EnemyAI : MonoBehaviour
         movingRight = !movingRight;
         transform.eulerAngles = new Vector3(0, movingRight ? 0 : 180, 0);
     }
-    void OnCollisionEnter(Collision collision)
+
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Trigger Game Over
             if (gameManager != null)
                 gameManager.TriggerGameOver();
 
-            // Optional: play effect or animation here before disappearing
-            // e.g., Destroy(gameObject, 0.1f); instead of instantly
+
             Destroy(gameObject, 0.1f);
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
