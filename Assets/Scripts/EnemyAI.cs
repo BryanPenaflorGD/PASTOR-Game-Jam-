@@ -17,10 +17,11 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Components")]
     private Rigidbody2D rb;
-
+    private AutoRestartWithFade gameManager;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameManager = FindObjectOfType<AutoRestartWithFade>();
     }
 
     private void Update()
@@ -71,6 +72,30 @@ public class EnemyAI : MonoBehaviour
     {
         movingRight = !movingRight;
         transform.eulerAngles = new Vector3(0, movingRight ? 0 : 180, 0);
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Trigger Game Over
+            if (gameManager != null)
+                gameManager.TriggerGameOver();
+
+            // Optional: play effect or animation here before disappearing
+            // e.g., Destroy(gameObject, 0.1f); instead of instantly
+            Destroy(gameObject, 0.1f);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (gameManager != null)
+                gameManager.TriggerGameOver();
+
+            Destroy(gameObject, 0.1f);
+        }
     }
 
     void OnDrawGizmosSelected()

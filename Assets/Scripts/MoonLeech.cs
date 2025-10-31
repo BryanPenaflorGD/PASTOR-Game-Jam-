@@ -30,12 +30,13 @@ public class MoonLeechAI : MonoBehaviour
     private bool isDead = false;
     private bool isWiggling = true;
     private float wiggleTimer = 0f;
-
+    private AutoRestartWithFade gameManager;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0; // Start attached to ceiling
         initialPosition = transform.position;
+        gameManager = FindObjectOfType<AutoRestartWithFade>();
     }
 
     void Update()
@@ -123,6 +124,8 @@ public class MoonLeechAI : MonoBehaviour
 
     void Die()
     {
+        if (gameManager != null)
+            gameManager.TriggerGameOver();
         isDead = true;
         isChasing = false;
         rb.gravityScale = 0;
