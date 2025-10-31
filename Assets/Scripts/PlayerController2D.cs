@@ -18,6 +18,17 @@ public class PlayerController2D : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
 
+    private Animator anim;
+    private Rigidbody2D body;
+
+    [SerializeField] private Transform spriteTransform;
+
+
+    private void Awake()
+    {
+        body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +39,11 @@ public class PlayerController2D : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+        if (moveInput > 0.01f)
+            spriteTransform.localRotation = Quaternion.Euler(0, 0, 0);
+        else if (moveInput < -0.01f)
+            spriteTransform.localRotation = Quaternion.Euler(0, 180, 0);
+        anim.SetBool("Run", moveInput != 0);
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {

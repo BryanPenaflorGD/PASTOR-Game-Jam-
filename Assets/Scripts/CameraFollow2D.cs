@@ -1,33 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow2D : MonoBehaviour
 {
-
-    [Header("Target")]
     public Transform target;
+    public float smoothSpeed = 5f;
+    public Vector3 offset;
 
-    [Header("Follow Settings")]
-    public float followSpeed = 5f;
-    public Vector2 offset;
-
-    [Header("Vertical Lock")]
-    public bool lockYAxis = false;
-
-    private Vector3 targetPos;
     void LateUpdate()
     {
-        if (target == null)
-            return;
+        if (target == null) return;
 
-        targetPos = new Vector3(target.position.x + offset.x,
-                                target.position.y + offset.y,
-                                transform.position.z);
+        // Target position with offset
+        Vector3 desiredPosition = target.position + offset;
 
-        if (lockYAxis)
-            targetPos.y = transform.position.y;
+        // Smooth movement
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
 
-        transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
+        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, transform.position.z);
     }
 }
