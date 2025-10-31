@@ -23,6 +23,11 @@ public class MainMenu : MonoBehaviour
     public float flashDuration = 0.6f;      // Duration of the star pulse
     public float flashScale = 1.5f;         // How large the pulse expands
 
+    [Header("Moon Floating Effect")]
+    public RectTransform moonTransform;     // Assign your moon image here
+    public float floatAmplitude = 10f;      // How high it moves up/down
+    public float floatSpeed = 1f;           // Speed of the floating motion
+
     void Start()
     {
         // Hide menu at start
@@ -37,6 +42,10 @@ public class MainMenu : MonoBehaviour
             moonFlash.color = new Color(1, 1, 1, 0);
             moonFlash.transform.localScale = Vector3.zero;
         }
+
+        // Start floating moon effect
+        if (moonTransform != null)
+            StartCoroutine(FloatMoon());
 
         // Play main animation
         StartCoroutine(FadeInMenu());
@@ -122,6 +131,18 @@ public class MainMenu : MonoBehaviour
         }
 
         titleText.alpha = 1f;
+    }
+
+   
+    IEnumerator FloatMoon()
+    {
+        Vector3 startPos = moonTransform.anchoredPosition;
+        while (true)
+        {
+            float newY = startPos.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
+            moonTransform.anchoredPosition = new Vector2(startPos.x, newY);
+            yield return null;
+        }
     }
 
     public void PlayGame()
