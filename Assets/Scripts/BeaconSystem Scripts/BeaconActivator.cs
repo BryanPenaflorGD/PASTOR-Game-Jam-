@@ -16,14 +16,17 @@ public class BeaconActivator : MonoBehaviour
     public UnityEvent onBeaconActivated;
 
     private bool isActivated = false;
-    private bool isChanneling = false; 
+    private bool isChanneling = false;
     private Coroutine channelRoutine;
     private PlayerInventory playerInventory;
     private bool playerInRange = false;
 
+    private Animator anim;
+
     private void Awake()
     {
-        // Initialize UnityEvent if it's null
+        anim = GetComponent<Animator>();
+
         if (onBeaconActivated == null)
             onBeaconActivated = new UnityEvent();
     }
@@ -41,32 +44,44 @@ public class BeaconActivator : MonoBehaviour
 
         if (!playerInRange || isActivated) return;
 
-        if (Input.GetKeyDown(KeyCode.E))
+        // Toggle channeling on key press
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (!isChanneling)
-                channelRoutine = StartCoroutine(ChannelBeacon());
+            {
+                if (playerInventory.HasEnoughFragments(requiredFragments))
+                {
+                    channelRoutine = StartCoroutine(ChannelBeacon());
+                    anim.SetBool("isChanneling", true);
+                }
+                else
+                {
+                    Debug.Log("Not enough fragments to activate beacon!");
+                }
+            }
             else
+            {
                 StopChanneling("Channeling stopped manually.");
+            }
         }
     }
 
     private IEnumerator ChannelBeacon()
     {
-        if (!playerInventory.HasEnoughFragments(requiredFragments))
-        {
-            Debug.Log("Not enough fragments to activate beacon!");
-            yield break;
-        }
-
         isChanneling = true;
         float elapsed = 0f;
         Debug.Log("Channeling started...");
 
         while (elapsed < channelTime)
         {
-            if (!isChanneling) yield break;
+            // Interrupted manually
+            if (!isChanneling)
+            {
+                StopChanneling("Channeling interrupted.");
+                yield break;
+            }
 
-            // Player left range mid-channel
+            // Player moved away
             if (!playerInRange)
             {
                 StopChanneling("Player left beacon range.");
@@ -77,11 +92,13 @@ public class BeaconActivator : MonoBehaviour
             yield return null;
         }
 
-        // CHANNEL COMPLETE ✅
+        // ✅ Channeling complete — now spend fragments
         playerInventory.SpendFragments(requiredFragments);
-        Debug.Log($"Spent {requiredFragments} fragments. Remaining: {playerInventory.fragments}");
+        Debug.Log($"Beacon activated! Spent {requiredFragments} fragments. Remaining: {playerInventory.fragments}");
+
         ActivateBeacon();
         isChanneling = false;
+        anim.SetBool("isChanneling", false);
     }
 
     private void StopChanneling(string reason)
@@ -91,6 +108,8 @@ public class BeaconActivator : MonoBehaviour
 
         isChanneling = false;
         channelRoutine = null;
+        anim.SetBool("isChanneling", false);
+
         Debug.Log(reason);
     }
 
@@ -99,11 +118,12 @@ public class BeaconActivator : MonoBehaviour
         if (isActivated) return;
         isActivated = true;
 
-        Debug.Log("Beacon Activated!");
         if (beaconLight != null)
             beaconLight.SetActive(true);
 
         onBeaconActivated?.Invoke();
+
+        Debug.Log("✅ Beacon successfully activated!");
     }
 
     private void OnDrawGizmosSelected()

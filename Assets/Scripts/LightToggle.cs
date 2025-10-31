@@ -112,6 +112,12 @@ public class LightToggle : MonoBehaviour
 
         Destroy(wave);
     }
+
+    public float GetFuelPercent()
+    {
+        return currentFuel / maxFuel;
+    }
+
     private void DrainFuel()
     {
         currentFuel -= fuelDrainRate * Time.deltaTime;

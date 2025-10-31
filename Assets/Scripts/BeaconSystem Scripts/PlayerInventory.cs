@@ -9,7 +9,7 @@ public class PlayerInventory : MonoBehaviour
     public void AddFragments(int amount)
     {
         fragments += amount;
-        Debug.Log("Fragments collected: " + fragments);
+        Debug.Log( fragments);
     }
 
     public bool HasEnoughFragments(int required)
