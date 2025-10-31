@@ -10,11 +10,21 @@ public class PlayerStatusEffects : MonoBehaviour
     private float originalSpeed;
     private PlayerController2D playerMovement; // reference to your player's movement script
 
+    [Header("Status Effect Visuals")]
+    public GameObject slowEffect;   // assign in Inspector (e.g. blue aura)
+    public GameObject blindEffect;  // assign in Inspector (e.g. dark vignette)
+    public GameObject fuelEffect;   // assign in Inspector (e.g. low-fuel warning)
+
     void Start()
     {
         playerMovement = GetComponent<PlayerController2D>();
         if (playerMovement != null)
             originalSpeed = playerMovement.moveSpeed;
+
+        // make sure all effects are off at the start
+        if (slowEffect != null) slowEffect.SetActive(false);
+        if (blindEffect != null) blindEffect.SetActive(false);
+        if (fuelEffect != null) fuelEffect.SetActive(false);
     }
 
     // Called by enemies or hazards when applying a debuff
@@ -40,6 +50,7 @@ public class PlayerStatusEffects : MonoBehaviour
     {
         isSlowed = true;
         Debug.Log("Player is slowed!");
+        if (slowEffect != null) slowEffect.SetActive(true);
 
         if (playerMovement != null)
             playerMovement.moveSpeed *= 0.5f; // example: half speed
@@ -49,15 +60,17 @@ public class PlayerStatusEffects : MonoBehaviour
         if (playerMovement != null)
             playerMovement.moveSpeed = originalSpeed;
 
+        if (slowEffect != null) slowEffect.SetActive(false);
+
         isSlowed = false;
         Debug.Log("Slow debuff ended.");
     }
 
-   
     private IEnumerator BlindDebuff(float duration)
     {
         isBlinded = true;
         Debug.Log("Player’s field of vision is shrinking...");
+        if (blindEffect != null) blindEffect.SetActive(true);
 
         Camera cam = Camera.main;
         if (cam != null)
@@ -90,6 +103,8 @@ public class PlayerStatusEffects : MonoBehaviour
             cam.orthographicSize = originalSize;
         }
 
+        if (blindEffect != null) blindEffect.SetActive(false);
+
         isBlinded = false;
         Debug.Log("Player’s vision returned to normal!");
     }
@@ -98,9 +113,11 @@ public class PlayerStatusEffects : MonoBehaviour
     {
         isLackingFuel = true;
         Debug.Log("Player is losing grip on a fragment!");
-        // moon fragment usage shortened
+        if (fuelEffect != null) fuelEffect.SetActive(true);
 
         yield return new WaitForSeconds(duration);
+
+        if (fuelEffect != null) fuelEffect.SetActive(false);
 
         isLackingFuel = false;
         Debug.Log("Lack of Fuel ended!");
