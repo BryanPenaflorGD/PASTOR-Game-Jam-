@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes_/MainMenu.unity
     guid: 9b37e4856b441884b9e0f6201bdf20bc
+  - enabled: 1
+    path: Assets/Scenes_/boss anim experiment.unity
+    guid: 05c31c0d300ac8d4cab3fdbb1cb33afe
   m_configObjects: {}
