@@ -4,6 +4,12 @@ using UnityEngine.Events;
 
 public class BeaconActivator : MonoBehaviour
 {
+    [Header("SFX")]
+    public AudioSource sfxSource;
+    public AudioClip channelStartSFX;
+    public AudioClip channelInterruptSFX;
+    public AudioClip beaconActivateSFX;
+
     [Header("Beacon Settings")]
     public int requiredFragments = 5;
     public float channelTime = 3f;
@@ -23,12 +29,8 @@ public class BeaconActivator : MonoBehaviour
     private PlayerInventory playerInventory;
     private bool playerInRange = false;
 
-    private Animator anim;
-
     private void Awake()
     {
-        anim = GetComponent<Animator>();
-
         if (onBeaconActivated == null)
             onBeaconActivated = new UnityEvent();
 
@@ -60,7 +62,11 @@ public class BeaconActivator : MonoBehaviour
             if (playerInventory.HasEnoughFragments(requiredFragments))
             {
                 channelRoutine = StartCoroutine(ChannelBeacon());
-                anim.SetBool("isChanneling", true);
+
+                if (channelStartSFX != null)
+                {
+                    sfxSource.PlayOneShot(channelStartSFX);
+                }
             }
             else
             {
@@ -97,7 +103,6 @@ public class BeaconActivator : MonoBehaviour
         playerInventory.SpendFragments(requiredFragments);
         ActivateBeacon();
         isChanneling = false;
-        anim.SetBool("isChanneling", false);
     }
 
     private void StopChanneling(string reason)
@@ -107,7 +112,11 @@ public class BeaconActivator : MonoBehaviour
 
         isChanneling = false;
         channelRoutine = null;
-        anim.SetBool("isChanneling", false);
+
+        if (channelInterruptSFX != null)
+        {
+            sfxSource.PlayOneShot(channelInterruptSFX);
+        }
 
         Debug.Log(reason);
     }
@@ -122,7 +131,12 @@ public class BeaconActivator : MonoBehaviour
 
         onBeaconActivated?.Invoke();
 
-        Debug.Log("✅ Beacon successfully activated!");
+        if (beaconActivateSFX != null)
+        {
+            sfxSource.PlayOneShot(beaconActivateSFX);
+        }
+
+        Debug.Log("Beacon successfully activated!");
     }
 
     private void OnDrawGizmosSelected()

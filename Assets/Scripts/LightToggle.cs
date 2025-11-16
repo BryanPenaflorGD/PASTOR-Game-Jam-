@@ -20,6 +20,11 @@ public class LightToggle : MonoBehaviour
     private float currentFuel;
     private bool isDraining = false;
 
+    [Header("SFX")]
+    public AudioSource sfxSource;
+    public AudioClip lightActivateClip;
+    public AudioClip lightDeactivateClip;
+
     [Header("References")]
     public PlayerInventory playerInventory;
 
@@ -83,6 +88,8 @@ public class LightToggle : MonoBehaviour
             foreach (var light in lights)
                 if (light != null)
                     light.enabled = true;
+            if (sfxSource != null && lightActivateClip != null)
+                sfxSource.PlayOneShot(lightActivateClip);
 
             if (wavePrefab)
                 yield return StartCoroutine(SpawnWave());
@@ -145,6 +152,9 @@ public class LightToggle : MonoBehaviour
             if (light != null)
                 light.enabled = false;
         }
+
+        if (sfxSource != null && lightDeactivateClip != null)
+            sfxSource.PlayOneShot(lightDeactivateClip);
     }
 
 }

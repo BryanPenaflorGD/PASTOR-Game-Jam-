@@ -26,6 +26,8 @@ public class PlayerController2D : MonoBehaviour
 
     public Transform spriteChild;
 
+    private PlayerSFX sfx;
+
     [SerializeField] private Transform spriteTransform;
 
 
@@ -33,6 +35,7 @@ public class PlayerController2D : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sfx = GetComponent<PlayerSFX>();
     }
     // Start is called before the first frame update
     void Start()
@@ -65,13 +68,20 @@ public class PlayerController2D : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            sfx.PlayJump();
             anim.SetTrigger("Jump");
+            
             grounded = false;
         }
         //if(!wasGrounded && isGrounded)
         //{
         //    anim.ResetTrigger("Land");
         //}
+
+        if(isGrounded && Mathf.Abs(moveInput) > 0.01f)
+        {
+            sfx.PlayWalk();
+        }
     }
 
     private void FixedUpdate()

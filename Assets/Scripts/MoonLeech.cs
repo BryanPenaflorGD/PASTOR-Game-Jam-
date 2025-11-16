@@ -23,6 +23,14 @@ public class MoonLeechAI : MonoBehaviour
     public float wiggleDuration = 0.5f;  // How long it wiggles before pausing
     public float wigglePause = 2.5f;     // How long it pauses before wiggling again
 
+    [Header("SFX")]
+    public AudioSource sfxSource;           // Single AudioSource for all leech sounds
+    public AudioClip wiggleClip;             // For ceiling wiggle
+    public AudioClip dropClip;               // For falling
+    public AudioClip[] chaseClips;              // For chasing movement
+
+    public AudioClip[] wiggleClips;
+
     private Rigidbody2D rb;
     private Vector3 initialPosition;
     private bool isFalling = false;
@@ -88,6 +96,14 @@ public class MoonLeechAI : MonoBehaviour
                 wiggleTimer = 0f;
             }
         }
+
+        if (isWiggling && wiggleClips.Length > 0 && Time.frameCount % 20 == 0) // play intermittently
+        {
+            int index = Random.Range(0, wiggleClips.Length);
+            sfxSource.volume = Random.Range(0.3f, 0.5f);  // low volume for subtle movement
+            sfxSource.pitch = Random.Range(0.95f, 1.05f); // optional small pitch variation
+            sfxSource.PlayOneShot(wiggleClips[index]);
+        }
     }
 
     System.Collections.IEnumerator DropAfterDelay()
@@ -95,6 +111,13 @@ public class MoonLeechAI : MonoBehaviour
         isFalling = true;
         yield return new WaitForSeconds(dropDelay);
         rb.gravityScale = fallGravityScale;
+
+        if (dropClip != null)
+        {
+            sfxSource.volume = Random.Range(0.6f, 0.8f);
+            sfxSource.pitch = Random.Range(0.9f, 1.1f);
+            sfxSource.PlayOneShot(dropClip);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
