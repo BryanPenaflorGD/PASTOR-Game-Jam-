@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes_/Bakunawa_Ending.unity
     guid: 50807e33843f76d4bbf8f942d554b842
+  - enabled: 1
+    path: Assets/Scenes_/INTRO.unity
+    guid: bf84346acbd3e1542af456de48940b15
   m_configObjects: {}
