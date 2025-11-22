@@ -18,8 +18,9 @@ public class IntroTextController : MonoBehaviour
     public TextMeshProUGUI titleText;
 
     [Header("Settings")]
-    public float fadeSpeed = 2f;
-    public float breatherTime = 1f; // UPDATED: pause before title
+    public float fadeSpeed = 3f;
+    public float breatherTime = 1f;
+    public float titleHoldTime = 2.5f;  // NEW — how long the title stays before fading out
     public string nextSceneName = "MainMenu";
 
     private int textIndex = 0;
@@ -53,11 +54,7 @@ public class IntroTextController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !isTransitioning)
         {
-            if (introFinished)
-            {
-                SceneManager.LoadScene(nextSceneName);
-                return;
-            }
+            if (introFinished) return; // No more clicking after title
 
             clickCount++;
 
@@ -90,7 +87,6 @@ public class IntroTextController : MonoBehaviour
 
         if (textIndex >= storyTexts.Length)
         {
-            // After last text → fade out last image and text
             StartCoroutine(FadeOutThenTitle());
             return;
         }
@@ -136,30 +132,28 @@ public class IntroTextController : MonoBehaviour
         isTransitioning = false;
     }
 
-    // UPDATED: Fade out last image + text, wait breather, then fade in title
     IEnumerator FadeOutThenTitle()
     {
         isTransitioning = true;
 
-        // Fade out last image and text
         StartCoroutine(FadeImage(introImages[imageIndex], 0));
         yield return StartCoroutine(FadeText(0));
 
-        // Wait for breather
         yield return new WaitForSeconds(breatherTime);
 
-        // Fade in title
-        yield return StartCoroutine(FadeTitle());
+        yield return StartCoroutine(FadeTitle()); // now auto handles fade out + next scene
 
         titleShown = true;
         isTransitioning = false;
     }
 
+    // UPDATED: Fade in title → hold → fade out → load next scene
     IEnumerator FadeTitle()
     {
         isTransitioning = true;
         Color c = titleText.color;
 
+        // Fade IN
         while (c.a < 1f)
         {
             c.a += fadeSpeed * Time.deltaTime;
@@ -167,7 +161,21 @@ public class IntroTextController : MonoBehaviour
             yield return null;
         }
 
-        isTransitioning = false;
+        // Hold title visible
+        yield return new WaitForSeconds(titleHoldTime);
+
+        // Fade OUT title
+        while (c.a > 0f)
+        {
+            c.a -= fadeSpeed * Time.deltaTime;
+            titleText.color = c;
+            yield return null;
+        }
+
+        // Auto go to next scene
+        SceneManager.LoadScene(nextSceneName);
+
         introFinished = true;
+        isTransitioning = false;
     }
 }
