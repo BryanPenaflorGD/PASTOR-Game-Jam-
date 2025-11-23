@@ -47,3 +47,6 @@ TagManager:
   - name: Bakunawa(Boss)
     uniqueID: 2174315215
     locked: 0
+  - name: 2
+    uniqueID: 3776906609
+    locked: 0
