@@ -141,9 +141,24 @@ public class MoonLeechAI : MonoBehaviour
         isFalling = false;
         isChasing = true;
         rb.gravityScale = 0;
-        yield return new WaitForSeconds(chaseDuration);
-        Die();
+
+        float timer = 0f;
+        while (timer < chaseDuration)
+        {
+            timer += Time.deltaTime;
+
+            // move towards player while chasing
+            if (player != null)
+                transform.position = Vector2.MoveTowards(transform.position, player.position, chaseSpeed * Time.deltaTime);
+
+            yield return null;
+        }
+
+        // Only destroy the leech without killing player
+        isChasing = false;
+        Destroy(gameObject);
     }
+
 
     void Die()
     {
