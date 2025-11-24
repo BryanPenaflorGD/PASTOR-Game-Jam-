@@ -7795,6 +7795,7 @@ MonoBehaviour:
   musicSource: {fileID: 1349388018}
   sfxSource: {fileID: 1349388018}
   mixer: {fileID: 24100000, guid: 75abe1226f645e94ca39e3262c241159, type: 2}
+  mainMenuMusic: {fileID: 8300000, guid: 671c0ebb49e077d419b6a0e47a4c2956, type: 3}
 --- !u!4 &1349388020
 Transform:
   m_ObjectHideFlags: 0

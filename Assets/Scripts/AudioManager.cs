@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
     public AudioMixer mixer;
+
+    // Optional: assign your main menu music here in the inspector
+    public AudioClip mainMenuMusic;
 
     private void Awake()
     {
@@ -21,6 +25,25 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Stop music if we leave the main menu
+        if (scene.name != "MainMenu" && musicSource.clip == mainMenuMusic)
+        {
+            musicSource.Stop();
+        }
+    }
+
     public void PlaySFX(AudioClip clip)
     {
         sfxSource.PlayOneShot(clip);
@@ -32,7 +55,7 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void StopMusic(AudioClip music)
+    public void StopMusic()
     {
         musicSource.Stop();
     }
