@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BeaconActivator : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class BeaconActivator : MonoBehaviour
     private Coroutine channelRoutine;
     private PlayerInventory playerInventory;
     private bool playerInRange = false;
+    private int beaconCount = 0;
 
     private void Awake()
     {
@@ -137,6 +139,11 @@ public class BeaconActivator : MonoBehaviour
         }
 
         Debug.Log("Beacon successfully activated!");
+        beaconCount += 1;
+        if (beaconCount >= 5)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
     private void OnDrawGizmosSelected()

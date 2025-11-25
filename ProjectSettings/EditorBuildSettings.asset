@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes_/INTRO.unity
     guid: bf84346acbd3e1542af456de48940b15
-  - enabled: 0
-    path: Assets/Scenes_/Merge_Level.unity
-    guid: 2eb9e4511e5b61c408a5cc7a6ba4c615
   - enabled: 1
     path: Assets/Scenes_/Scene 1.unity
     guid: 1b72fbbb9d154134d92b7c29fe75bb6a
