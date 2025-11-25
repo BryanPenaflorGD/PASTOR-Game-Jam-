@@ -40,15 +40,30 @@ public class EnemyAI : MonoBehaviour
 
     void Patrol()
     {
-        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        // Move the enemy
+        rb.velocity = new Vector2(movingRight ? moveSpeed : -moveSpeed, rb.velocity.y);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
+        // Check the ground ahead
+        Vector2 origin = groundCheck.position;
+        Vector2 direction = Vector2.down;
+        float distance = groundCheckDistance;
 
+        RaycastHit2D groundInfo = Physics2D.Raycast(origin, direction, distance, groundLayer);
+
+        // If no ground ahead, flip
         if (!groundInfo.collider)
         {
             Flip();
         }
+
+        // Optional: Check wall in front and flip
+        RaycastHit2D wallInfo = Physics2D.Raycast(origin, movingRight ? Vector2.right : Vector2.left, 0.2f, groundLayer);
+        if (wallInfo.collider)
+        {
+            Flip();
+        }
     }
+
 
     void ChasePlayer()
     {
