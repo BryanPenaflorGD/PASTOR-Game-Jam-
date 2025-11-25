@@ -6,7 +6,6 @@ public class PlayerStatusEffects : MonoBehaviour
     private bool isSlowed = false;
     private bool isBlinded = false;
     private bool isLackingFuel = false;
-    private int debuffHit = 0;
 
     private float originalSpeed;
     private PlayerController2D playerMovement; // reference to your player's movement script
@@ -15,7 +14,6 @@ public class PlayerStatusEffects : MonoBehaviour
     public GameObject slowEffect;   // assign in Inspector (e.g. blue aura)
     public GameObject blindEffect;  // assign in Inspector (e.g. dark vignette)
     public GameObject fuelEffect;   // assign in Inspector (e.g. low-fuel warning)
-    public AutoRestartWithFade gameOver;
 
     void Start()
     {
@@ -40,7 +38,6 @@ public class PlayerStatusEffects : MonoBehaviour
 
             case "Blind":
                 if (!isBlinded) StartCoroutine(BlindDebuff(duration));
-                
                 break;
 
             case "Fuel":
@@ -51,14 +48,6 @@ public class PlayerStatusEffects : MonoBehaviour
 
     private IEnumerator SlowDebuff(float duration)
     {
-        debuffHit++;
-        Debug.Log(debuffHit);
-
-        if (debuffHit >= 5)
-        {
-            gameOver.TriggerGameOver();
-        }
-
         isSlowed = true;
         Debug.Log("Player is slowed!");
         if (slowEffect != null) slowEffect.SetActive(true);
@@ -79,14 +68,6 @@ public class PlayerStatusEffects : MonoBehaviour
 
     private IEnumerator BlindDebuff(float duration)
     {
-        debuffHit++;
-        Debug.Log(debuffHit);
-
-        if (debuffHit >= 5)
-        {
-            gameOver.TriggerGameOver();
-        }
-
         isBlinded = true;
         Debug.Log("Player’s field of vision is shrinking...");
         if (blindEffect != null) blindEffect.SetActive(true);
@@ -130,14 +111,6 @@ public class PlayerStatusEffects : MonoBehaviour
 
     private IEnumerator FuelDebuff(float duration)
     {
-        debuffHit++;
-        Debug.Log(debuffHit);
-
-        if (debuffHit >= 5)
-        {
-            gameOver.TriggerGameOver();
-        }
-
         isLackingFuel = true;
         Debug.Log("Player is losing grip on a fragment!");
         if (fuelEffect != null) fuelEffect.SetActive(true);
